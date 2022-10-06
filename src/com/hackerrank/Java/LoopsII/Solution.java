@@ -1,6 +1,5 @@
-package com.hackerrank.JavaLoopsII;
+package com.hackerrank.Java.LoopsII;
 
-import java.io.*;
 import java.util.*;
 
 public class Solution {

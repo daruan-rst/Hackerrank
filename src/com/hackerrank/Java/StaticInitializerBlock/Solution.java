@@ -1,6 +1,5 @@
-package com.hackerrank.JavaStaticInitializerBlock;
+package com.hackerrank.Java.StaticInitializerBlock;
 
-import java.io.*;
 import java.util.*;
 
 public class Solution {

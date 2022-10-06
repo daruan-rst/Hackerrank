@@ -1,7 +1,5 @@
-package com.hackerrank.JavaDatatypes;
+package com.hackerrank.Java.Datatypes;
 
-import java.io.*;
-import java.util.*;
 import java.util.Scanner;
 
 public class Solution {

@@ -1,6 +1,5 @@
-    package com.hackerrank.JavaEndOfFile;
+    package com.hackerrank.Java.EndOfFile;
 
-    import java.io.*;
     import java.util.*;
 
 

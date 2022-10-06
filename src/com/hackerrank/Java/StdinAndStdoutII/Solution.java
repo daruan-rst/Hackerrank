@@ -1,4 +1,4 @@
-package com.hackerrank.Begginers.JavaStdinAndStdoutII;
+package com.hackerrank.Java.StdinAndStdoutII;
 
 import java.util.Scanner;
 

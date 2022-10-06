@@ -1,7 +1,5 @@
-package com.hackerrank.JavaOutputFormatting;
+package com.hackerrank.Java.OutputFormatting;
 
-import java.io.*;
-import java.util.*;
 import java.util.Scanner;
 
 public class Solution {
