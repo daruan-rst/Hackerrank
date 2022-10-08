@@ -29,7 +29,5 @@ public class Solution {
                         .format(value));
         System.out.println(print);
     }
-
-
-
+    
 }
