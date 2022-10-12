@@ -1,4 +1,4 @@
-package com.hackerrank.Java.StdinAndStdoutII;
+package com.hackerrank.Java.Introduction.StdinAndStdoutII;
 
 import java.util.Scanner;
 
@@ -21,5 +21,6 @@ public class Solution {
         System.out.println("String: " + s);
         System.out.println("Double: " + d);
         System.out.println("Int: " + i);
+        scan.close();
     }
 }

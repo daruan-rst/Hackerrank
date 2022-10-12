@@ -1,4 +1,4 @@
-    package com.hackerrank.Java.EndOfFile;
+    package com.hackerrank.Java.Introduction.EndOfFile;
 
     import java.util.*;
 
@@ -10,7 +10,7 @@
             while (sc.hasNext()) {
                 System.out.println(i++ + " " + sc.nextLine());
             }
-
+            sc.close();
         }
     }
 

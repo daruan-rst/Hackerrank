@@ -1,6 +1,5 @@
-package com.hackerrank.Java.IntToString;
+package com.hackerrank.Java.Introduction.IntToString;
 
-import java.io.*;
 import java.util.*;
 
 public class Solution {
@@ -16,5 +15,6 @@ public class Solution {
             answer = "wrong";
         }
         System.out.println(answer);
+        sc.close();
     }
 }

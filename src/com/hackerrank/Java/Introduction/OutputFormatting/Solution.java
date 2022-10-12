@@ -1,4 +1,4 @@
-package com.hackerrank.Java.OutputFormatting;
+package com.hackerrank.Java.Introduction.OutputFormatting;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class Solution {
             System.out.printf("%-15s%03d%n",stringInput, numberInput);
         }
         System.out.println("================================");
-
+        sc.close();
     }
 }
 

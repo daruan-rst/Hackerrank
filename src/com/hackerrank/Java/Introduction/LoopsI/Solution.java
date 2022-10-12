@@ -1,4 +1,4 @@
-package com.hackerrank.Java.LoopsI;
+package com.hackerrank.Java.Introduction.LoopsI;
 
 import java.io.*;
 

@@ -1,8 +1,7 @@
-package com.hackerrank.Java.CurrencyFormatter;
+package com.hackerrank.Java.Introduction.CurrencyFormatter;
 
 
 
-import java.io.*;
 import java.text.NumberFormat;
 import java.util.*;
 
@@ -19,7 +18,7 @@ public class Solution {
         printFormat(new Locale("en", "in"), value);
         printFormat(Locale.CHINA, value);
         printFormat(Locale.FRANCE, value);
-
+        sc.close();
     }
 
     private static void printFormat(Locale locale, double value){

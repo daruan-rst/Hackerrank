@@ -1,4 +1,4 @@
-package com.hackerrank.Java.Datatypes;
+package com.hackerrank.Java.Introduction.Datatypes;
 
 import java.util.Scanner;
 

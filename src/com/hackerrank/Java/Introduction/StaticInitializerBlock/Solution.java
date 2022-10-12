@@ -1,4 +1,4 @@
-package com.hackerrank.Java.StaticInitializerBlock;
+package com.hackerrank.Java.Introduction.StaticInitializerBlock;
 
 import java.util.*;
 
