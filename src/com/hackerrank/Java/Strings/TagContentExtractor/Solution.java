@@ -13,29 +13,33 @@ public class Solution{
         int testCases = Integer.parseInt(in.nextLine());
         while(testCases>0){
             String line = in.nextLine();
-            System.out.println(extractContent(line));
+            extractContent(line);
             //Write your code here
 
             testCases--;
         }
     }
 
-    private static String extractContent(String withTag){
+    private static void extractContent(String withTag){
         String content = "";
-        boolean matchFound = false;
-        Pattern r = Pattern.compile("<(.+)>([^<]+)</\\1>");
-        Matcher m = r.matcher(withTag);
+        //. any // ^ does not include // "\\1" group1
+        String regex = "<(.+)>([^<]+)<(/\\1)>";
 
-        while (m.find()) {
-            content = m.group(2);
-            matchFound = true;
+        boolean matchAvailable = false;
+        Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(withTag);
+
+        //if(line.matches(regex)) System.out.println("test");
+
+        while(m.find()) {
+            matchAvailable = true;
+            System.out.println(m.group(2));
         }
-        if ( ! matchFound) {
-           content = "None";
+
+        if(!matchAvailable){
+            System.out.println("None");
         }
 
-
-        return content;
     }
 
 }
