@@ -1,8 +1,8 @@
 SELECT
   IF(
-    ABS(t.A - t.B) > t.B + t.A OR
-    ABS(t.A - t.C) > t.C + t.A OR
-    ABS(t.B - t.C) > t.C + t.B,
+    ABS(t.A + t.B) <= t.C OR
+    ABS(t.A + t.C) <= t.B OR
+    ABS(t.B + t.C) <= t.A,
     "Not A Triangle",
     IF(
       t.A = t.B AND t.C = t.B AND t.A = t.C,
