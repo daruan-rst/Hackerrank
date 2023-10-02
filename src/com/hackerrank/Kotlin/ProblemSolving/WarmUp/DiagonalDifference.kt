@@ -32,11 +32,11 @@ fun diagonalDifference(arr: Array<Array<Int>>): Int {
     var diagonalInversa: Int = 0
     for (i in 0 until n){
         for (j in 0 until n){
-            if (i.equals(j)){
-                diagonal = diagonal + arr[i][j]
+            if (i == j){
+                diagonal += arr[i][j]
             }
-            if ((i+j).equals(n-1)){
-                diagonalInversa = diagonalInversa + arr[i][j]
+            if ((i+j) == (n-1)){
+                diagonalInversa += arr[i][j]
             }
         }
     }
