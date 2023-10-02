@@ -1,4 +1,4 @@
-package com.hackerrank.Kotlin.ProblemSolving
+package com.hackerrank.Kotlin.ProblemSolving.WarmUp
 
 import java.util.*
 
