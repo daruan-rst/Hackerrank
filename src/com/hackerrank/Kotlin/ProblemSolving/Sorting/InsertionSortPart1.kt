@@ -22,9 +22,6 @@ fun insertionSort1(n: Int, arr: Array<Int>): Unit {
     println(arr.joinToString(" "))
 }
 
-fun printArray(arr: Array<Int>){
-    arr.forEach {a -> print("$a ") }
-}
 
 fun main(args: Array<String>) {
     val n = readLine()!!.trim().toInt()
