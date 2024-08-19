@@ -27,8 +27,8 @@ public class Solution {
         List<Integer> currentList;
 
         for(int i = 0 ; i < a.size() ; i++){
-            for (int j = 0 ; j < a.size() ; j++ ){
-                currentList = List.copyOf(a.subList(j,j));
+            for (int j = i ; j < a.size() ; j++ ){
+                currentList = List.copyOf(a.subList(i,j));
                 if (isNegativeSum(currentList)){
                     negativeArrays++;
                 }
