@@ -29,7 +29,7 @@ public class Solution {
         for(int i = 0 ; i < a.size() ; i++){
             for (int j = i ; j < a.size() ; j++ ){
                 currentList = List.copyOf(a.subList(i,j));
-                if (isNegativeSum(currentList)){
+                if (isNegativeSum(currentList, a.get(j))){
                     negativeArrays++;
                 }
             }
@@ -38,7 +38,7 @@ public class Solution {
         System.out.println(negativeArrays);
     }
 
-    private static boolean isNegativeSum(List<Integer> arr){
-        return arr.stream().reduce(0, Integer::sum) < 0;
+    private static boolean isNegativeSum(List<Integer> arr, Integer aj){
+        return arr.stream().reduce(0, Integer::sum) + aj < 0;
     }
 }
