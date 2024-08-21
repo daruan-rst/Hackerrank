@@ -48,12 +48,13 @@ public class Solution {
         }
 
         for (List<Integer> xy: xy_arr){
-//            xy.get(0) -> linha
-//            xy.get(1) -> posicao
-            try{
-                System.out.println(d.get(xy.get(0)).get(xy.get(1)));
-            }catch (Exception e){
+
+            int line = xy.get(0);
+            int pos = xy.get(1);
+            if (pos > d.get(line).size()){
                 System.out.println("ERROR!");
+            }else{
+                System.out.println(d.get(line).get(pos));
             }
 
         }
