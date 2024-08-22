@@ -28,23 +28,13 @@ public class Solution {
 
         List<List<Integer>> xy_arr = new ArrayList<>();
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < q; i++) {
             String[] inputNumbers = bufferedReader.readLine().trim().split(" ");
             List<Integer> xy = new ArrayList<>();
             for (String s: inputNumbers ) {
                 xy.add(Integer.valueOf(s));
             }
             xy_arr.add(xy);
-        }
-
-        for ( List<Integer> di: d
-             ) {
-            System.out.println(di);
-        }
-
-        for ( List<Integer> di: xy_arr
-        ) {
-            System.out.println(di);
         }
 
         for (List<Integer> xy: xy_arr){
