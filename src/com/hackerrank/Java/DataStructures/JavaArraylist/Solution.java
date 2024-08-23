@@ -41,7 +41,7 @@ public class Solution {
 
             int line = xy.get(0);
             int pos = xy.get(1);
-            if (pos > d.get(line).size()){
+            if (pos >= d.get(line).size()){
                 System.out.println("ERROR!");
             }else{
                 System.out.println(d.get(line).get(pos));
