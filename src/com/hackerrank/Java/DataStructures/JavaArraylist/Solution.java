@@ -37,6 +37,8 @@ public class Solution {
             xy_arr.add(xy);
         }
 
+        bufferedReader.close();
+
         for (List<Integer> xy: xy_arr) {
             int line = xy.get(0) - 1;
             int pos = xy.get(1);
