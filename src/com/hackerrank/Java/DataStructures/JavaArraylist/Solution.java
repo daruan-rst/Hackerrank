@@ -37,16 +37,14 @@ public class Solution {
             xy_arr.add(xy);
         }
 
-        for (List<Integer> xy: xy_arr){
-
-            int line = xy.get(0);
+        for (List<Integer> xy: xy_arr) {
+            int line = xy.get(0) - 1;
             int pos = xy.get(1);
-            if (pos >= d.get(line).size()){
+            if (line < 0 || line >= d.size() || pos < 0 || pos >= d.get(line).size()) {
                 System.out.println("ERROR!");
-            }else{
+            } else {
                 System.out.println(d.get(line).get(pos));
             }
-
         }
 
     }
