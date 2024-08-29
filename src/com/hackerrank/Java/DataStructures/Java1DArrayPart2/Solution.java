@@ -6,22 +6,25 @@ public class Solution {
 
     public static boolean canWin(int leap, int[] game) {
         int counter = 0;
-        for (int i = 0 ; i <= game.length; i++){
+        for (int i = 0 ; i < game.length ; ){
             if (i + leap >= game.length){
                 counter = game.length - 1;
                 break;
-            }
-            if (i + leap < game.length){
-                if (game[i+leap] == 0){
-                    counter = i+leap;
-                }
-            }else if (i + 1 < game.length){
+            } else if (i + 1 < game.length){
                 if (game[i+1] == 0){
                     counter = i+1;
+                    i = i+1;
                 }
             } else if (i > 0){
                 if (game[i-1] == 0){
                     counter = i-1;
+                    i = i-1;
+                }
+            }  else {
+                if (game[i+leap] == 0){
+                    counter = i+leap;
+                    i = i+leap;
+
                 }
             }
         }
