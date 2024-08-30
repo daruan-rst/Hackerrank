@@ -7,6 +7,8 @@ public class Solution {
     public static boolean canWin(int leap, int[] game) {
         int counter = 0;
         for (int i = 0 ; i < game.length ; ){
+            if (i >= game.length) return true;
+            if (i < 0 || game[i] == 1) return false;
             if (i + leap >= game.length){
                 counter = game.length - 1;
                 break;
