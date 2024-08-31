@@ -9,9 +9,8 @@ public class Solution {
         for (int i = 0 ; i < game.length ; ){
             if (i >= game.length) return true;
             if (i < 0 || game[i] == 1) return false;
-            if (i + leap >= game.length){
-                counter = game.length - 1;
-                break;
+            if (i >= game.length - 1 || i + leap >= game.length) {
+                return true;
             } else if (i + 1 < game.length){
                 if (game[i+1] == 0){
                     counter = i+1;
