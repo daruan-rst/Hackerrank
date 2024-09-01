@@ -5,32 +5,35 @@ import java.util.Scanner;
 public class Solution {
 
     public static boolean canWin(int leap, int[] game) {
-        int counter = 0;
-        for (int i = 0 ; i < game.length ; ){
-            if (i >= game.length) return true;
-            if (i < 0 || game[i] == 1) return false;
-            if (i >= game.length - 1 || i + leap >= game.length) {
-                return true;
-            } else if (i + 1 < game.length){
-                if (game[i+1] == 0){
-                    counter = i+1;
-                    i = i+1;
-                }
-            } else if (i > 0){
-                if (game[i-1] == 0){
-                    counter = i-1;
-                    i = i-1;
-                }
-            }  else {
-                if (game[i+leap] == 0){
-                    counter = i+leap;
-                    i = i+leap;
+        int n = game.length;
+        int i = 0;
 
-                }
+        while (i < n) {
+
+            if (i + leap >= n || i == n - 1) {
+                return true;
+            }
+
+
+            if (game[i + 1] == 0) {
+                i++;
+            }
+
+            else if (game[i + leap] == 0) {
+                i += leap;
+            }
+
+            else if (i > 0 && game[i - 1] == 0) {
+                game[i] = 1;
+                i--;
+            }
+
+            else {
+                break;
             }
         }
 
-        return counter == game.length - 1;
+        return false;
     }
 
     public static void main(String[] args) {
