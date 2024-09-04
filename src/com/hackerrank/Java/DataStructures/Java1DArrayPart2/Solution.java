@@ -15,12 +15,12 @@ public class Solution {
             }
 
 
-            if (game[i + 1] == 0) {
-                i++;
+            if (game[i + leap] == 0) {
+                i += leap;
             }
 
-            else if (game[i + leap] == 0) {
-                i += leap;
+            else if (game[i + 1] == 0) {
+                i++;
             }
 
             else if (i > 0 && game[i - 1] == 0) {
@@ -29,7 +29,7 @@ public class Solution {
             }
 
             else {
-                break;
+                return false;
             }
         }
 
